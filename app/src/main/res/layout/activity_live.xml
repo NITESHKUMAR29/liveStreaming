@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_video_chat_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LiveActivity">
+
+        <FrameLayout
+            android:id="@+id/remote_video_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="575dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="54dp"
+            android:layout_marginBottom="102dp"
+            android:background="@android:color/white" />
+
+        <FrameLayout
+            android:id="@+id/local_video_view_container"
+            android:layout_width="160dp"
+            android:layout_height="284dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/mute"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_baseline_keyboard_voice_24" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_baseline_volume_mute_24" />
+
+                <ImageView
+                    android:id="@+id/switch_camera"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_baseline_cameraswitch_24" />
+
+                <ImageView
+                    android:id="@+id/end_call"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_baseline_call_end_24" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
